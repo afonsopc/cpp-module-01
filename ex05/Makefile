@@ -26,6 +26,6 @@ test: re
 	./$(NAME) main.cpp std::string std::pagman
 	./$(NAME) Makefile $$ € 
 	curl https://socials.omelhorsite.pt > test.txt
-	./$(NAME) test.txt fado omelhorsite.pt
+	./$(NAME) test.txt fado caldo
 
 .PHONY: all clean fclean re
