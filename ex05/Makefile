@@ -1,5 +1,5 @@
-NAME	= sed
-SRC		= main.cpp
+NAME	= harl
+SRC		= main.cpp Harl.cpp
 OBJ_DIR	= obj
 OBJ		= $(addprefix $(OBJ_DIR)/, $(SRC:.cpp=.o))
 CC		= c++
@@ -21,11 +21,5 @@ fclean: clean
 	$(RM) $(NAME)
 
 re: fclean all
-
-test: re
-	./$(NAME) main.cpp std::string std::pagman
-	./$(NAME) Makefile $$ € 
-	curl https://socials.omelhorsite.pt > test.txt
-	./$(NAME) test.txt fado caldo
 
 .PHONY: all clean fclean re
